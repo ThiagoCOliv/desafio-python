@@ -2,5 +2,4 @@ openai
 openai-whisper
 gTTS
 ipython
-google-colab
 torch
