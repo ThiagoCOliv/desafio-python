@@ -6,8 +6,8 @@ from response_audio import resposta_em_audio
 
 while input("Pressione Enter para começar a gravação de áudio (ou digite 'sair' para encerrar): ") != 'sair':
     tempo_gravacao = input("Quanto tempo deseja gravar em segundos? Pressione Enter para 5 segundos ou digite o número de segundos: ")
-    
-    record_file = record(tempo_gravacao or 5)
+
+    record_file = record(int(tempo_gravacao) or 5)
     transcription = reconhecer_fala(record_file)
     chatgpt_response = enviar_para_chatgpt(transcription)
     response_audio = resposta_em_audio(chatgpt_response)
