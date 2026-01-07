@@ -1,4 +1,5 @@
 from IPython.display import display, Javascript
+from google.colab import output
 from base64 import b64decode
 
 RECORD = """
